@@ -1,3 +1,4 @@
+// This code has been modified by Christopher-K-Long
 import ColorExtractor from '../color-extractor';
 import ColorStrategy from './__strategy-base';
 import { EOL, HEXA_VALUE } from '../../util/regexp';
