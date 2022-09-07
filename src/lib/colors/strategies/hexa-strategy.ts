@@ -3,7 +3,7 @@ import ColorStrategy from './__strategy-base';
 import { EOL, HEXA_VALUE } from '../../util/regexp';
 import Color from '../color';
 
-const HEXA_PREFIX = '(?:#|0x)';
+const HEXA_PREFIX = '(?:#|0x|{)';
 export const REGEXP = new RegExp(`(${HEXA_PREFIX}(?:${HEXA_VALUE}{3,4}|${HEXA_VALUE}{6}|${HEXA_VALUE}{8}))${EOL}`, 'gi');
 export const REGEXP_ONE = new RegExp(`^(${HEXA_PREFIX}(?:${HEXA_VALUE}{3,4}|${HEXA_VALUE}{6}|${HEXA_VALUE}{8}))${EOL}`, 'i');
 
