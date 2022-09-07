@@ -31,7 +31,7 @@ function extractAlpha(values: number[]): number {
 }
 
 function removePrefix(argb: string): RegExpExecArray {
-  return /(?:#|0x)(.+)/gi.exec(argb);
+  return /(?:#|0x|{)(.+)/gi.exec(argb);
 }
 function hexaToInt(argb: string): number[] {
   return argb.split('').map(_ => parseInt(_, 16));
